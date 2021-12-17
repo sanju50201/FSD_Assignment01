@@ -1,0 +1,32 @@
+Q2.Data Types in Java:
+-----------------------------------------------------------------
+byte		Byte	1 byte	-128 to 127   
+short		Short	2 bytes -32768 to 32767 			
+int 	       Integer	4 bytes 
+long		Long	8 bytes 
+float		Float	4 bytes	
+double		Double	8 bytes	
+char	     Character	2 bytes	
+String			depends on the size of the string
+boolean        Boolean	stores true or false
+-------------------------------------------------------------------
+
+Q5. Strings come under the section of non-primitive data types, the data is stored in the heap memory, where the address of the string is stored
+Let's say you declare a string with 3 characters "Str", the data is stored in the heap memory, whereas the adress of the string is stored in stack, it's memory size will be 6 bytes here
+when it is changed to "String" the memory is increased to 12 bytes and it is recreated in the heap memory and the address for it is stored in the stack, the variable just stores the 
+adress of the String here. Strings in Java are immutable which means that the once the variable is created it's data cant' be changed but a new String object will be created
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q6. String pool can be defined as a storage area in Java Heap where String literals are stored. It is just like object allocation. By default, it is empty and maintained by a String Class
+Whenever we create a string the string object occupies some space in heap memory, creating a number of strings may increase the memory, which may reduce the performance.
+When we create a String Literal, Java runtime first checks that literal in the string pool. If the literal is already present in the pool, it returns a reference to the pooled instance. If 
+the literal is not present in the pool, a new string object takes place in the string pool.
+
+Example:
+Using String literal:
+String a = "Hello";
+String b = "Hello World";
+
+Using a new keyword (or) creating a new keyword:
+String a = new String("Hello");
+String b = new String("Hello World");
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
