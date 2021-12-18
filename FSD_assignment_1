@@ -30,3 +30,11 @@ Using a new keyword (or) creating a new keyword:
 String a = new String("Hello");
 String b = new String("Hello World");
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q7. Java is generally faster than python because Java is a compiled language, whereas Python is a interpreted language which is simpler and more concise syntax than Java.
+when a Java code is compiled a .class file is generated which is a machine understandable code, so whenever we need to run a java code the .class file will be used to run the java program using JRE
+The runtime for Java is very fast when compared to python
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
